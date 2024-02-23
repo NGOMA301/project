@@ -1,9 +1,12 @@
 import React from 'react'
-
-function test() {
+import './test.css'
+function Test() {
   return (
-    <div>test</div>
+    <div><label className="switch">
+    <input type="checkbox" />
+    <span className="slider round"></span>
+  </label></div>
   )
 }
 
-export default test
+export default Test

@@ -1,15 +1,14 @@
 import './App.css';
 import { BrowserRouter as Router,Route,Switch} from 'react-router-dom'
 import Home from './components/home/home'
-import test from './components/test';
+import './components/test.jsx';
 import Navbar from './components/navBar/nav'
 import About from './components/about/about'
 import Service from './components/services//service'
 import Portfolio from './components/poltfolio/poltfolio'
 import Contact from './components/contact/contact'
 import Styleswitcher from './components/styleswitcher/styleswitcher'
-// import'./styleswitch'
-// import  './pot'
+
 
 
 function App() {
@@ -18,21 +17,7 @@ function App() {
       <div className='navs'>
          <Navbar/>
       </div>
-      <div className='home'>
-        {/* <Home/>  */}
-      </div>
-      <div className='about'>
-        {/* <About/> */}
-      </div><div className='service'>
-        {/* <Service/> */}
-      </div>
-      <div className='portfolio'>
-        {/* <Portfolio/> */}
-      </div>
-      <div className='contact'>
-        {/* <Contact/> */}
-      </div>
-      <div className='StyleSwitcher'>
+       <div className='StyleSwitcher'>
         <Styleswitcher/>
       </div>
       <div>

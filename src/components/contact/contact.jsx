@@ -1,6 +1,7 @@
 import React from 'react'
 // import './contact.css'
 import {FaPhone,FaWhatsapp,FaEnvelope,FaGlobeAfrica,} from 'react-icons/fa'
+import { Cursor } from 'react-simple-typewriter'
 
 export default function contact() {
   return (
@@ -77,7 +78,7 @@ export default function contact() {
                 </div>
                 <div className="row">
                     <div className='form-item col-12 padd-15'>
-                        <button className='btn' type='submit'>Send Message</button>
+                        <button className='btn' type='submit' style={{cursor:"pointer"}}>Send Message</button>
                     </div>
                 </div>
             </div>
