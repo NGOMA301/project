@@ -6,11 +6,11 @@ import {useTypewriter, Cursor} from 'react-simple-typewriter'
 // import './pot'
 
 function Home() {
-  const {text} = useTypewriter({
-    words: ["Web Designer","Web Developer","Video Editor"],
-    loop:{try: true},
-    typeSpeed:100,
-    deleteSpeed:120,
+  const [text] = useTypewriter({
+    words: ["Web Designer","Web Developer","Graphic Designer","Photographer","Music Director","Video Editor"],
+    loop:true,
+    typeSpeed:50,
+    deleteSpeed:20,
   });
   return (
     <div className='main-content'>
@@ -19,7 +19,7 @@ function Home() {
           <div className="row">
             <div className="home-info padd-15">
               <h3 class="hello">Hello, my name is <span class="name">Ngoma Benjamin</span></h3> 
-              <h3 class="my-profession">I`m a <span class="typing">{text}</span><Cursor cursorStyle='|'/> </h3>
+              <h3 class="my-profession">I`m a <span class="typing">{text}</span><Cursor cursorStyle='>'/> </h3>
               <p>Hello I`m  experienced web developer specializing in front-end and back-end technologies. Passionate about crafting user-friendly websites with clean, efficient code.</p>
             </div>
             <div className="home-img padd-15">

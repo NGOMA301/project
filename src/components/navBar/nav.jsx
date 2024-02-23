@@ -23,8 +23,8 @@ const Nav = () => {
                 <ul className="nav" id='nav'>
                     <li id='li'><a href="/" id='a'><i><FaHome/></i>Home</a></li>
                     <li id='li'><a href="/about" id='a'><i className='fa fa-home'><FaUser/></i>About</a></li>
-                    <li id='li'><a href="/service" id='a'><i className='fa fa-home'><FaList/></i>Servicer</a></li>
-                    <li id='li'><a href="/portfolio" id='a'><i className='fa fa-home'><FaBriefcase/></i>portfoilio</a></li>
+                    <li id='li'><a href="/service" id='a'><i className='fa fa-home'><FaList/></i>Services</a></li>
+                    <li id='li'><a href="/portfolio" id='a'><i className='fa fa-home'><FaBriefcase/></i>portfolio</a></li>
                     <li id='li'><a href="/contact" id='a'><i className='fa fa-home'><FaComment/></i>Contact</a></li>
                     
                 </ul>
