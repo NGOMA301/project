@@ -7,14 +7,9 @@
     --bg-black-50: #e8dfec;
     --text-black-900: #302e4d;
     --text-black-700: #504e70;
+    --skin-color: #f021b2;
 } 
-/* :root{
-    --bg-black-900: #151515;
-    --bg-black-100: #222222;
-    --bg-black-50: #393939;
-    --text-black-900: #ffffff;
-    --text-black-700: #e9e9e9;
-} */
+
 body.dark
 {
     --bg-black-900: #151515;
@@ -22,6 +17,7 @@ body.dark
     --bg-black-50: #393939;
     --text-black-900: #ffffff;
     --text-black-700: #e9e9e9;
+    --skin-color: #f021b2;
 }
 
 .about .about-content .info-item a
@@ -151,7 +147,7 @@ ul{
     transition: all .3s ease;
 }
 .btn:hover{
-    transform: scale(1.05);
+    transform: scale(1.09);
 }
 
 ::before,::after{
@@ -185,6 +181,11 @@ ul{
     top: 50px;
     font-size: 30px;
     text-transform: capitalize;
+    transition: all .3s ease;
+}
+.aside .logo:hover
+{
+    transform: scale(1.09);
 }
 .aside .logo a{
     color: var(--text-black-900);
@@ -289,6 +290,15 @@ ul{
     display: block;
     color: var(--text-black-900);
     padding: 5px 15px;
+    transition: all .3s ease;
+}
+.aside .nav li a:hover
+{
+    color: var(--skin-color);
+}
+.aside .nav li a:focus
+{
+    color: var(--skin-color);
 }
 .aside .nav li a.active{
     color: var(--skin-color);
@@ -320,6 +330,11 @@ ul{
     max-width: 40%;
     text-align: center;
     position: relative;
+    transition: all .3s ease;
+}
+.home .home-img:hover
+{
+    transform: scale(1.05);
 }
 img
 {
@@ -572,6 +587,11 @@ h3.my-profession{
     flex: 0 0 33.33%;
     max-width: 33.33%;
     margin-bottom: 30px;
+    transition: all .3s ease;
+}
+.service .service-item:hover
+{
+    transform: scale(1.1);
 }
 .service .service-item .service-item-inner
 {
@@ -652,6 +672,14 @@ h3.my-profession{
     width: 100%;
     display: block;
 }
+.portfolio .portfolio-item .portfolio-item-inner:hover
+{
+    transform: scale(1.1);
+}
+.portfolio .portfolio-item .portfolio-item-inner
+{
+    transition: all .3s ease;
+}
 .portfolio .portfolio-item .portfolio-item-inner .portfolio-img .rango
 {
     width: 100%;
@@ -691,6 +719,12 @@ h3.my-profession{
 .contact .contact-info-item .icon
 {
     display: inline-block;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+.contact .contact-info-item .icon:hover
+{
+    transform: scale(2);
 }
 .contact .contact-info-item .icon .fa
 {

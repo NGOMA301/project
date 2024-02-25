@@ -22,6 +22,12 @@ function App() {
       </div>
       <div>
         <Router>
+          <Home/> 
+          <switch>
+           <Route path='/' />
+          </switch>
+        </Router>
+        <Router>
 
           <switch>
             <Route path="/">
@@ -49,7 +55,7 @@ function App() {
               <Contact/>
             </Route>
           </switch>
-        </Router>
+        </Router> 
       </div>
       </div>
   );
