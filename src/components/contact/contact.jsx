@@ -47,10 +47,11 @@ export default function contact() {
             <h3 className='contact-title padd-15'>SEND ME AN E-MAIL</h3>
             <h4 className='contact-sub-title padd-15'>I`M VERY RESPOSIVE TO MESSAGES</h4>
             <div className="row">
+                <form action="" className='formula'>
                 <div className='contact-form padd-15'>
                     <div className="row">
                         <div className='form-item col-6 padd-15'>
-                            <form action="process.php" method='POST'>
+                            <form action="" method=''>
                                 <div className="form-group">
                                     <input type="text" placeholder='Name' className='form-control' required/>
                                 </div>                   
@@ -82,6 +83,7 @@ export default function contact() {
                     </div>
                 </div>
             </div>
+            </form>
         </div>
         </div>
     </section>

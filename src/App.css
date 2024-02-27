@@ -177,6 +177,7 @@ ul{
 
 }
 
+
 .aside .logo{
     position: absolute;
     top: 50px;
@@ -760,6 +761,9 @@ h3.my-profession{
 }
 @media(max-width:1211px)
 {
+    .aside_show{
+    left: 0 !important;
+    }
     .aside{
         left: -270px;
     }
@@ -860,4 +864,9 @@ h3.my-profession{
     {
         padding-left: 20%;
     }
+}
+
+.formula
+{
+    width: 100%;
 }

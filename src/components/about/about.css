@@ -176,6 +176,7 @@ ul{
 
 }
 
+
 .aside .logo{
     position: absolute;
     top: 50px;
@@ -279,6 +280,7 @@ ul{
 .aside .nav{
     margin-top: 50px;
 }
+
 .aside .nav li{
     margin-bottom: 20px;
     display: block;
@@ -295,6 +297,7 @@ ul{
 .aside .nav li a:hover
 {
     color: var(--skin-color);
+    transform: scale(1.4);
 }
 .aside .nav li a:focus
 {
@@ -797,6 +800,9 @@ h3.my-profession{
 }
 @media(max-width:1211px)
 {
+    .aside_show{
+        left: 0 !important;
+    }
     .aside{
         left: -270px;
     }

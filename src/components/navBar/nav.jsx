@@ -1,5 +1,5 @@
 import './nav.css'
-import React from 'react'
+import React, { useState } from 'react'
 import './color-1.css'
 import './color-2.css'
 import './color-3.css'
@@ -7,22 +7,21 @@ import './color-4.css'
 import './color-5.css'
 // import './pot'
 import Home from '../home/home'
-import {FaHome,FaUser,FaList,FaBriefcase,FaComment} from 'react-icons/fa'
+import {FaHome,FaUser,FaList,FaBriefcase,FaComment } from 'react-icons/fa'
 
 
 
 const Nav = () => {
 
-  
+    const [showAside,setShowAside] = useState(false)
 
     return (
         <div className='main-container'>
-            <div className="aside" id='aside'>
+            <div className={`${showAside ? 'aside aside_show' : 'aside'}`} id='aside'>
                 <div className="logo">
                     <a href="/"><span>N</span>goma</a>
                 </div>
-                <div className="nav-toggler" id='nav-toggler' >
-                
+                <div className="nav-toggler" id='nav-toggler' onClick={()=> setShowAside(!showAside)}>
                     <span></span>
                    
                 </div>
