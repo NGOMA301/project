@@ -1,27 +1,29 @@
 
-import { useRef } from 'react'
+import React,{useRef} from 'react';
 import { FaPhone, FaWhatsapp, FaEnvelope, FaGlobeAfrica, } from 'react-icons/fa'
-//import emailjs from '@emailjs/browser'
-//npm i @emailjs/browser
+import emailjs from '@emailjs/browser';
 
 export default function contact() {
 
-    // const form = useRef();
+    const Form = useRef();
 
-    // const sendEmail = (e) => {
-    //     e.preventDefault();
+    const sendEmail = (e) => {
+        e.preventDefault();
 
-
-    //     emailjs.sendForm('Service_Id', 'Template_Id', form.current, 'Public_Key')
-    //         .then((result) => {
-    //             console.log(result.text);
-    //         },
-    //             (error) => {
-    //                 console.log(error.text);
-    //             });
-    //     e.target.reset();
-    // };
-
+        emailjs
+            .sendForm('service_t0hptyw', 'template_1x1fcva', Form.current, {
+                publicKey: '50QPE7UhI8mjdzBh0',
+            })
+            .then(
+                () => {
+                    console.log('SUCCESS!');
+                },
+                (error) => {
+                    console.log('FAILED...', error.text);
+                },
+            );
+        e.target.reset()
+    };
 
 
     return (
@@ -67,7 +69,7 @@ export default function contact() {
                 <h3 className='contact-title padd-15'>SEND ME AN E-MAIL</h3>
                 <h4 className='contact-sub-title padd-15'>I`M VERY RESPOSIVE TO MESSAGES</h4>
                 <div className="row">
-                    <form action="" className='formula'>
+                    <form ref={Form} onSubmit={sendEmail} className='formula'>
                         <div className='contact-form padd-15'>
                             <div className="row">
                                 <div className='form-item col-6 padd-15'>
@@ -77,7 +79,7 @@ export default function contact() {
                                 </div>
                                 <div className='form-item col-6 padd-15'>
                                     <div className='form-group'>
-                                        <input type="email" className='form-control' name="email" placeholder='Email' required />
+                                        <input type="email" className='form-control' name="user_email" placeholder='Email' required />
                                     </div>
                                 </div>
                             </div>
@@ -97,7 +99,7 @@ export default function contact() {
                             </div>
                             <div className="row">
                                 <div className='form-item col-12 padd-15'>
-                                    <button className='btn' type='submit' style={{ cursor: "pointer" }}>Send Message  <i></i></button>
+                                    <button className='btn' name='submit' type='submit' style={{ cursor: "pointer" }}>Send Message  <i></i></button>
                                 </div>
                             </div>
                         </div>
