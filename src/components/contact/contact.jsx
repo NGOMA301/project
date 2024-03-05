@@ -1,31 +1,31 @@
 
-import React,{useRef} from 'react';
+import React, { useRef } from 'react';
 import { FaPhone, FaWhatsapp, FaEnvelope, FaGlobeAfrica, } from 'react-icons/fa'
 import emailjs from '@emailjs/browser';
 
 export default function Contact() {
 
-    const Form = useRef();
+    const form = useRef();
 
     const sendEmail = (e) => {
-        e.preventDefault();
-
-        emailjs
-            .sendForm('service_t0hptyw', 'template_1x1fcva', Form.current, {
-                publicKey: '50QPE7UhI8mjdzBh0',
-            })
-            .then(
-                () => {
-                    alert('Thank You For Sending Me An Email I`ll Reply You Very Soon!');
-                },
-                (error) => {
-                    alert('Sorry Your Message Was Not Sent Due To Slow Internet connection', error.text);
-                },
-            );
-        e.target.reset()
+      e.preventDefault();
+  
+      emailjs
+        .sendForm('service_t0hptyw', 'template_1x1fcva', form.current, {
+          publicKey: '50QPE7UhI8mjdzBh0',
+        })
+        .then(
+          () => {
+            alert('SUCCESS!');
+          },
+          (error) => {
+            alert('FAILED...', error.text);
+          },
+          e.target.reset()
+        );
     };
-
-
+        
+        
     return (
         <section className='contact section'>
             <div className="container">
@@ -62,14 +62,14 @@ export default function Contact() {
                     <div className='contact-info-item padd-15'>
                         <div className='icon'><i className='fa fa-phone'><FaGlobeAfrica /></i></div>
                         <h4>Website</h4>
-                        <p><a href="https://benjamin.kesug.com/?i=1" target="_blank">benjamin.kesug.com</a></p>
+                        <p><a href="https://benjamin.kesug.com/?i=1" target="blank">benjamin.kesug.com</a></p>
                     </div>
                     {/* ===============conact info item end========================= */}
                 </div>
                 <h3 className='contact-title padd-15'>SEND ME AN E-MAIL</h3>
                 <h4 className='contact-sub-title padd-15'>I`M VERY RESPOSIVE TO MESSAGES</h4>
                 <div className="row">
-                    <form ref={Form} onSubmit={sendEmail} className='formula'>
+                    <form ref={form} onSubmit={sendEmail} className='formula'>
                         <div className='contact-form padd-15'>
                             <div className="row">
                                 <div className='form-item col-6 padd-15'>
@@ -93,13 +93,13 @@ export default function Contact() {
                             <div className="row">
                                 <div className='form-item col-12 padd-15'>
                                     <div className='form-group'>
-                                        <textarea name="message" className='form-control' id="message" placeholder='Message' required></textarea>
+                                        <textarea name="message" className='form-control' placeholder='Message' required></textarea>
                                     </div>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className='form-item col-12 padd-15'>
-                                    <button className='btn' name='submit' type='submit' style={{ cursor: "pointer" }}>Send Message  <i></i></button>
+                                    <input type="submit" value='Send Message' className='btn' style={{ cursor: "pointer" }} />
                                 </div>
                             </div>
                         </div>
