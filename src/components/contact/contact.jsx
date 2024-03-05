@@ -19,7 +19,7 @@ export default function Contact() {
                     alert('Thank You For Sending Me An Email I`ll Reply You Very Soon!');
                 },
                 (error) => {
-                    alert('Sorry Your Message Was Not Sent Due To Low Internet connection', error.text);
+                    alert('Sorry Your Message Was Not Sent Due To Slow Internet connection', error.text);
                 },
             );
         e.target.reset()
