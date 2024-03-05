@@ -1,9 +1,7 @@
 import React from 'react'
 import benpic from '../home/BenPic.jpg'
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
-// import './home.css'
-// import './styleswitch'
-// import './pot'
+
 
 function Home() {
   const [text] = useTypewriter({

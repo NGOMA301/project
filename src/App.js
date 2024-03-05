@@ -5,7 +5,7 @@ import Navbar from './components/navBar/nav'
 import About from './components/about/about'
 import Service from './components/services//service'
 import Portfolio from './components/poltfolio/poltfolio'
-import Contact from './components/contact/contact'
+import Contact from './components/contact/Contact'
 import Styleswitcher from './components/styleswitcher/styleswitcher'
 
 

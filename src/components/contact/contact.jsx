@@ -3,7 +3,7 @@ import React,{useRef} from 'react';
 import { FaPhone, FaWhatsapp, FaEnvelope, FaGlobeAfrica, } from 'react-icons/fa'
 import emailjs from '@emailjs/browser';
 
-export default function contact() {
+export default function Contact() {
 
     const Form = useRef();
 
@@ -16,10 +16,10 @@ export default function contact() {
             })
             .then(
                 () => {
-                    console.log('SUCCESS!');
+                    alert('Thank You For Sending Me An Email I`ll Reply You Very Soon!');
                 },
                 (error) => {
-                    console.log('FAILED...', error.text);
+                    alert('Sorry Your Message Was Not Sent Due To Low Internet connection', error.text);
                 },
             );
         e.target.reset()
