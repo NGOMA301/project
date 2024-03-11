@@ -16,10 +16,10 @@ export default function Contact() {
         })
         .then(
           () => {
-            alert('SUCCESS!');
+            alert('Your Request Was Successfully Sent!');
           },
           (error) => {
-            alert('FAILED...', error.text);
+            alert('Sorry Your Message Was Not Sent? Try Again!', error.text);
           },
           e.target.reset()
         );

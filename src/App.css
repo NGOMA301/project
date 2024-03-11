@@ -30,6 +30,15 @@ body {
     font-family: 'poppins' sans-serif;
 }
 
+.none{
+    color: var(--skin-color);
+}
+
+.aside .nav li a.none {
+    color: var(--skin-color);
+}
+
+
 * {
     margin: 0;
     padding: 0;

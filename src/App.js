@@ -38,7 +38,7 @@ function App() {
             </Route>
           </Switch>
           <Switch>
-            <Route path="/service">
+            <Route path="/services">
               <Service />
             </Route>
           </Switch>

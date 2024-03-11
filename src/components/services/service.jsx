@@ -1,5 +1,4 @@
 import React from 'react'
-// import './service'
 import { FaMusic, FaLaptopCode, FaVideo, FaCode, FaCamera, FaPaintBrush } from 'react-icons/fa'
 
 export default function service() {

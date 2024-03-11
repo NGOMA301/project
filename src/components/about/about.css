@@ -326,8 +326,11 @@ ul {
 .aside .nav li a:focus {
     color: var(--skin-color);
 }
+.none{
+    color: var(--skin-color);
+}
 
-.aside .nav li a.active {
+.aside .nav li a.none {
     color: var(--skin-color);
 }
 
@@ -867,11 +870,6 @@ h3.my-profession {
         display: block;
         margin-left: 0;
     }
-
-    .home .container {
-        /* margin: 0; */
-        /* padding: 0; */
-    }
 }
 
 @media(max-width:991px) {
@@ -976,7 +974,7 @@ h3.my-profession {
 .css6 {
     width: 0%;
 }
-.actives
-{
+
+.actives {
     color: #f021b2;
 }

@@ -1,10 +1,4 @@
 import React from 'react'
-// import './poltfolio.css'
-// import './color-1.css'
-// import './color-2.css'
-// import './color-3.css'
-// import './color-4.css'
-// import './color-5.css'
 import ben1 from './ben1.jpg'
 import ben3 from './ben3.jpg'
 import ben4 from './ben4.jpg'
@@ -28,7 +22,7 @@ export default function poltfolio() {
           <div className="portfolio-item padd-15">
             <div className="portfolio-item-inner">
               <div className="portfolio-img">
-                <img className='rango' src={ben1} />
+                <img className='rango' src={ben1} alt='project1'/>
               </div>
             </div>
           </div>
@@ -37,7 +31,7 @@ export default function poltfolio() {
           <div className="portfolio-item padd-15">
             <div className="portfolio-item-inner">
               <div className="portfolio-img">
-                <img className='rango' src={ben3} />
+                <img className='rango' src={ben3} alt='project2'/>
               </div>
             </div>
           </div>
@@ -46,7 +40,7 @@ export default function poltfolio() {
           <div className="portfolio-item padd-15">
             <div className="portfolio-item-inner">
               <div className="portfolio-img">
-                <img className='rango' src={ben4} />
+                <img className='rango' src={ben4} alt='project3'/>
               </div>
             </div>
           </div>

@@ -1,14 +1,7 @@
 import React from 'react'
 import './styleswitcher.css'
 
-
-
-
-
 export default function styleswitcher() {
-
-
-
 
   const setDarkMode = () => {
     localStorage.setItem('theme', "dark");
